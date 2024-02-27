@@ -1,0 +1,39 @@
+.form_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+}
+.form_newproduct{
+    position: relative;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding: 40px;
+    gap: 20px;
+    span{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .icon_delete{
+        color: red;
+        margin-top: 10px;
+        font-size: 40px;
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+        right: 0;
+        :hover{
+            transition: 0.4s ease-in-out;
+            color: rgb(77, 20, 20);
+        }
+    }
+}
