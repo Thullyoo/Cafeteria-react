@@ -1,10 +1,10 @@
 import { FormEvent, useState } from 'react';
 import './Menu.scss';
-import FormNewProduct from './FormNewProduct';
+
 
 function Menu(){
 
-    const [ visibleForm, setVisibleForm] = useState(false);
+   
 
     function Slaainda(e:FormEvent){
             e.preventDefault();
@@ -48,12 +48,7 @@ function Menu(){
                       <input type="submit" value="Filtrar" />
                       <button>Remover filtro</button>
                 </div> 
-                <div>
-                    <button onClick={(e) => {setVisibleForm(true)}}>Adicionar novo produto</button>
-                    {visibleForm && (
-                        <FormNewProduct/>
-                    )}
-                </div>  
+               
            </form>
         </div>
     );
